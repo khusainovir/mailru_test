@@ -1,0 +1,98 @@
+html {
+	font-size: 14px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+.testForm {
+	color: #000;
+	font-size: 1rem;
+	float: left;
+	width: 500px;
+}
+.testForm  {
+	margin: 5px 10px;
+}
+.responseBlock {
+	min-height: 300px;
+	margin: 10px;
+	padding: 5px 10px;
+	font-size: 1rem;
+	border: solid 1px #999;
+	background: #fff;
+	color: #000;
+	width: calc( 100% - 600px );
+	float: left;
+}
+.responseBlock.error {
+	border: solid 1px #900;
+	background: #ffcccc;
+	color: #900;
+}      
+.responseBlock.success {
+	border: solid 1px #090;
+	background: #ccffcc;
+	color: #090;
+}
+
+.collapsible {
+	width: auto;
+	clear: both;
+	display: block;
+	border: solid 1px #1e7d9e;
+	border-radius: 10px;
+	margin: 5px 10px;
+}
+
+.collapsible > h3 {
+	display: block;
+	clear: both;
+	text-align: left;
+	color: #fff;
+	background: #1e7d9e;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1.1rem;
+	border-radius: 10px 10px 0 0 ;
+}
+
+.collapsible > .body {
+	padding: 5px 10px;
+	clear: both;
+	display: block;
+	font-size: 1rem;
+}
+
+.collapsible > .body div:nth-child(odd) {
+	background-color: #f0f0f0;
+}
+
+.collapsible.collapsed > .body {
+	display: none;
+}
+
+.collapsible .body  span, .collapsible .body input, .collapsible .body button {
+	display: inline-block;
+	margin: 1%;
+	min-width: 46%;
+	max-width: 46%;
+	font-size: 1rem;
+}
+
+textarea {
+	margin: 1%;
+	width: 98%;
+	min-height: 30px;
+	display: block;
+	clear: both;
+}
+
+.collapsible > .body select[multiple] {
+	min-height: 100px;
+	margin: 2px 5px;
+	min-width: 150px;
+	max-width: 150px;	
+}

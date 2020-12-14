@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <script src="jquery-3.5.1.min.js"></script>
+	<script src="script.js?"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>User Management</title>
+</head>
+<body>
+    <div class="testForm">
+        <div class="collapsible">
+            <h3>GET /kv/:key</h3>
+            <div class="body">
+                <input type="text" id="getVal" name="getVal" placeholder="Enter key"/>
+                <button type="button" id="getButton">Get value</button>
+            </div>
+        </div>
+
+        <div class="collapsible">
+            <h3>PUT /kv/:key</h3>
+            <div class="body">
+                <input type="text" id="putKey" name="putKey" placeholder="Enter key"/>
+                <textarea id="putVal" placeholder="Enter your data here"></textarea>
+                <button type="button" id="putButton">Put value</button>
+            </div>
+        </div>
+
+        <div class="collapsible">
+            <h3>POST /kv/</h3>
+            <div class="body">
+                <input type="text" id="postKey" name=postKey" placeholder="Enter key"/>
+                <textarea id="postVal" placeholder="Enter your data here"></textarea>
+                <button type="button" id="postButton">Post value</button>
+            </div>
+        </div>
+
+        <div class="collapsible">
+            <h3>DELETE /kv/:key</h3>
+            <div class="body">
+                <input type="text" id="deleteVal" name="deleteVal" placeholder="Enter key"/>
+                <button type="button" id="deleteButton">Delete value</button>
+            </div>
+        </div>
+
+        <div class="collapsible">
+            <h3>Multiple GET /kv/:key</h3>
+            <div class="body">
+                <input type="text" id="mgetVal" name="mgetVal" placeholder="Enter key"/>
+                <input type="number" id="mgetNum" name="mgetNum" min="1" max="200" placeholder="Enter key"/>
+                <button type="button" id="mgetButton">Get value</button>
+            </div>
+        </div>
+    </div>
+    <div class="responseBlock">
+    </div>
+</html>
